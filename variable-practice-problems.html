@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practice</title>
+</head>
+<body>
+
+<script>
+	//bmi calculator
+	var weight = prompt("How many pounds do you weigh?");
+	weight = parseFloat(weight) / 2.2;
+
+	var height = prompt("How many inches tall are you? (5 feet = 60 inches)");
+	height = parseFloat(height) * 0.0254;
+
+	var bmi = Math.round((weight / (Math.pow(height, 2))));
+	alert("Your bmi is " + bmi);
+
+
+	//temperature conversion
+	var T = prompt("What's the temperature in Farenheit today?");
+	T = Math.round((parseFloat(T) - 32) * (5/9));
+	alert("The temperature today is " + T + " degrees Celcius")
+
+
+	//average test score
+	var score1 = prompt("Tell me a numberical test score from today's test.");
+	score1 = parseFloat(score1);
+	var score2 = prompt("Tell me another test score from today's test.");
+	score2 = parseFloat(score2);
+	var score3 = prompt("Tell me a third test score from today's test.");
+	score3 = parseFloat(score3);
+	var score4 = prompt("Tell me a fourth test score from today's test.");
+	score4 = parseFloat(score4);
+	var score5 = prompt("Tell me a fifth test score from today's test.");
+	score5 = parseFloat(score5);
+	var avgScore = (score1 + score2 + score3 + score4 + score5) / 5;
+	alert("The average score was " + avgScore);
+
+
+
+
+</script>
+
+</body>
+</html>
